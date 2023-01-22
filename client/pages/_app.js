@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import { Poppins } from '@next/font/google'
 
 const poppins = Poppins({
-  weight: ["300","400"],
+  weight: ["300","400","700"],
   subsets:["latin"]
 })
 
