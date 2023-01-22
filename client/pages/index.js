@@ -1,18 +1,9 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css';
+import React from 'react'
 
-const App = () => {
+function index() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Styrate</title>
-        <link rel="icon" href="/favicon.ico" /> 
-      </Head>
+    <div>index</div>
+  )
+}
 
-      <main></main>
-       
-    </div>
-  );
-};
-
-export default App ;
+export default index
