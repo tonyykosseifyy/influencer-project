@@ -10,9 +10,9 @@ const navbar = () => {
     <nav className={styles.navbar}>
       <Logo onClick={() => router.push("/")} />
       <div className={styles.linksContainer}>
-        <NavLink isActive>Top Trendsetters</NavLink>
-        <NavLink>Recommended products</NavLink>
-        <NavLink>All products</NavLink>
+        <NavLink isActive={router.pathname === "/top-trendsetters"} href="/top-trendsetters">Top Trendsetters</NavLink>
+        <NavLink isActive={router.pathname === "/"} href="/">Recommended products</NavLink>
+        <NavLink href="/">All products</NavLink>
       </div>
     </nav>
   );

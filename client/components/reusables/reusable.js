@@ -9,10 +9,10 @@ export const Logo = ( props ) => {
 };
 
 export const NavLink = ( props ) => {
-  const { children ,isActive, ...rest } = props; 
+  const { children, isActive, ...rest } = props; 
   return (
-    <Link href="/" className={`${styles.navLink} ${isActive && styles.active}`} {...rest}>
+    <Link className={`${styles.navLink} ${isActive && styles.active}`} {...rest}>
       {children}
     </Link>
-  )
-}
+  );
+};
