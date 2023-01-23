@@ -6,3 +6,9 @@
     display: flex ;
     align-items: center;
 }
+
+.linksContainer {
+	display: flex;
+	align-items: center;
+	margin-left: 54px; 
+}

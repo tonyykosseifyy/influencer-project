@@ -1,11 +1,18 @@
 import styles from "./logo.module.css";
+import Link from 'next/link'
 
 
-const Logo = ({ propsStyles }) => {
-  console.log(styles);
+export const Logo = ( props ) => {
   return (
-      <h1 className={styles.logo} style={propsStyles}>Styrate</h1>
-  )
+      <h1 className={styles.logo} {...props}>Styrate</h1>
+  );
 };
 
-export default Logo ;
+export const NavLink = ( props ) => {
+  const { children , ...rest } = props; 
+  return (
+    <Link href="/" className={styles.navLink} {...rest}>
+      {children}
+    </Link>
+  )
+}

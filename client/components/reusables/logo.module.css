@@ -4,4 +4,24 @@
 	font-weight: 700;
 	font-size: 24px;
 	color: #000000;
+	cursor: pointer;
+}
+
+
+
+.navLink {
+	position: relative;
+	display: block;
+	font-weight: 500;
+	font-size: 21px;
+}
+.navLink::after {
+	content: "";
+	position: absolute;
+	bottom: 0 ;
+	left: 0 ;
+	width: 20px ;
+	height: 3px;
+	background-color: black ;
+
 }
