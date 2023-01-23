@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./navbar.module.css";
 import { Logo, NavLink, Button } from "../reusables/reusable";
 import { useRouter } from 'next/router'
-
+import Hamburger from '../reusables/hamburger';
 
 const navbar = () => {
+  const [ open , setOpen ] = useState(false);
   const router = useRouter();
   return (
     <nav className={styles.navbar}>
@@ -20,7 +21,7 @@ const navbar = () => {
         <Button>Create Account</Button>
       </div>
 
-
+      <Hamburger open={open} setOpen={(open) => setOpen(open)} />
     </nav>
   );
 };
