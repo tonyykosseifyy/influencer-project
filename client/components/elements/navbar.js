@@ -10,10 +10,10 @@ const navbar = () => {
   return (
     <nav className={styles.navbar}>
       <Logo onClick={() => router.push("/")} />
-      <div className={styles.linksContainer}>
-        <NavLink isActive={router.pathname === "/top-trendsetters"} href="/top-trendsetters">Top Trendsetters</NavLink>
-        <NavLink isActive={router.pathname === "/"} href="/">Recommended products</NavLink>
-        <NavLink href="/">All products</NavLink>
+      <div className={`${styles.linksContainer} ${open && styles.open}`}>
+        <NavLink onClick={() => setOpen(false)} isActive={router.pathname === "/top-trendsetters"} href="/top-trendsetters">Top Trendsetters</NavLink>
+        <NavLink onClick={() => setOpen(false)} isActive={router.pathname === "/"} href="/">Recommended products</NavLink>
+        <NavLink onClick={() => setOpen(false)} href="/">All products</NavLink>
       </div>
 
       <div className={styles.buttonsContainer}>
