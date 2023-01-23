@@ -16,3 +16,10 @@ export const NavLink = ( props ) => {
     </Link>
   );
 };
+
+export const Button = ( props ) => {
+  const { children, isLight, ...rest } = props ;
+  return (
+    <button className={`${styles.button} ${isLight ? styles.button_light: styles.button_dark}`} {...rest}>{children}</button>
+  ) 
+}
