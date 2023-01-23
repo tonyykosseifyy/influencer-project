@@ -12,8 +12,20 @@ const footer = () => {
           <p>Copyright © 2023 all rights reserved Styrate</p>
       </div>
       <div className={styles.rightFooter}>
-        
+        <p>Find us on social media</p>
+        <div className={styles.footerIcons}></div>
+
+        <div className={styles.footerHelp}>
+          <p>Our Store</p> 
+          <p>Help & FAQ</p> 
+          <p>Contact Us</p> 
         </div>
+
+        <div style={{display:"flex", justifySelf:"flex-end", fontSize:"13px"}}>
+          <p>Privacy Policy</p>
+          <p style={{marginLeft: "10px", marginTop:"auto"}}>Terms and Conditions</p>
+        </div>
+      </div>
     </footer>
   );
 };
