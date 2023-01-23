@@ -19,6 +19,8 @@ const navbar = () => {
         <Button isLight>Log in</Button>
         <Button>Create Account</Button>
       </div>
+
+
     </nav>
   );
 };

@@ -7,18 +7,18 @@ import Footer from "./elements/footer";
 const Layout = ({ children }) => {
   return (
     <div className={styles.wrapper}>
-			<Head>
-				<title>Styrate</title>
-				<link rel="icon" href="/favicon.ico" /> 
-			</Head>
+		<Head>
+			<title>Styrate</title>
+			<link rel="icon" href="/favicon.ico" /> 
+		</Head>
 
-			<Navbar />
-    
-		    {children}
+		<Navbar />
 
-			<Footer />
-    
-		</div>
+	    {children}
+
+		<Footer />
+
+	</div>
   );
 };
 

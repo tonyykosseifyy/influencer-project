@@ -6,10 +6,23 @@
     display: flex ;
     align-items: center;
 }
-
 .linksContainer {
 	display: flex;
 	align-items: center;
 	margin-left: 60px; 
     flex: 1;
+}
+
+@media screen and (max-width: 1050px) {
+    .navbar {
+        justify-content: space-between;
+    }
+    .linksContainer {
+        position: absolute;
+        top: 0 ;
+        right: 0 ;
+        bottom: 0 ;
+        background-color: red ;
+        transform: translateX(100%);
+    }
 }

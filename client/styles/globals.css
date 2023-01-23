@@ -13,3 +13,9 @@ a {
   text-decoration: none;
   color: inherit ;
 }
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --paddingX : 4vw ;
+  }
+}
