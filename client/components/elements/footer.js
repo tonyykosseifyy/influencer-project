@@ -1,13 +1,14 @@
 import React from 'react';
 import styles from "./footer.module.css";
 import { Logo } from "../reusables/reusable";
-
+import { useRouter } from 'next/router';
 
 const footer = () => {
+  const router = useRouter();
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.leftFooter}>
-          <Logo style={{color: "white"}} />
+          <Logo onClick={() => router.push("/")}  style={{color: "white"}} />
           <p>Styrate: The social ratings and review app you can trust</p>
           <p>Copyright © 2023 all rights reserved Styrate</p>
       </div>
