@@ -1,4 +1,4 @@
-import styles from "./logo.module.css";
+import styles from "./reusable.module.css";
 import Link from 'next/link'
 
 
@@ -9,9 +9,9 @@ export const Logo = ( props ) => {
 };
 
 export const NavLink = ( props ) => {
-  const { children , ...rest } = props; 
+  const { children ,isActive, ...rest } = props; 
   return (
-    <Link href="/" className={styles.navLink} {...rest}>
+    <Link href="/" className={`${styles.navLink} ${isActive && styles.active}`} {...rest}>
       {children}
     </Link>
   )

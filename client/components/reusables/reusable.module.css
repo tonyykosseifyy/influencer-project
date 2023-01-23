@@ -1,0 +1,38 @@
+.logo {
+	width: 91px;
+	height: 36px;
+	font-weight: 700;
+	font-size: 24px;
+	color: #000000;
+	cursor: pointer;
+}
+
+.navLink {
+	position: relative;
+	display: block;
+	font-size: 18px;
+	margin-right: 22px;
+	font-weight: 600;
+}
+
+.navLink::after {
+	content: "";
+	position: absolute;
+	bottom: -8px ;
+	left: 0 ;
+	width: 0px;
+	height: 2px ;
+	background-color: black ;
+	border-radius: 20%; 
+	transition: .3s ease-out;
+}
+
+.navLink:hover::after {
+	width: 40px ;
+}
+.active {
+	font-weight: 800 ;
+}
+.active::after {
+	width: 40px ;
+}
