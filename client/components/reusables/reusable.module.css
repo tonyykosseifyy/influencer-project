@@ -65,3 +65,12 @@
 .button_light:hover {
 	border-color: black 
 }
+
+@media screen and (max-width: 1050px) {
+	.navLink {
+		margin: 30px 10px 0 20px;
+	}
+	.navLink::after {
+		background-color: white ;
+	}
+}
