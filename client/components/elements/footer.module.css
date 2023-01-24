@@ -36,8 +36,9 @@
 
 .footerHelp {
     margin: 40px 0 ;
+    
 }
 .footerHelp > p {
-    margin: 7px 0;
+    margin: 9px 0;
     font-weight: 600;
 }
